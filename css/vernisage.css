@@ -1,0 +1,29 @@
+html {
+  background: url(http://subtlepatterns.com/patterns/diamond_upholstery.png);
+  font-family: Futura;
+}
+
+body {
+  margin: 0px;
+  padding: 25px;
+}
+
+h1 {color: #3F2818}
+
+.elvis,
+.elvis-slow,
+.elvis-no-opacity {
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px;
+  background: #fff;
+  display: inline-block;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #ddd #ccc #bbb #ccc;
+  box-shadow: 3px 3px 10px rgba(10,10,10,0.2);
+}
+
+.example {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Vernisage</title>
+    <link href="css/vernisage.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vernisage.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function(){
+        $(".elvis").vernisage();
+        $(".elvis-slow").vernisage({speed: 2000});
+        $(".elvis-no-opacity").vernisage({opacity: 0});
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Vernisage.js</h1>
+    <div class="example">
+      <ul class="elvis">
+        <li>
+        <img alt="Affair" src="http://www.photokunst.com/admin/images/large/l_AW014_1210009086.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Guitar" src="http://4.bp.blogspot.com/_31F7mncJA5E/TSeKKV-dg2I/AAAAAAAAALs/Q0r7e94AcmY/s1600/00763292-photo-elvis-presley.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Hair" src="http://www.elvisblog.net/Al%20Wertheimer/Elvis%20The%20Early%20Years/Elvis%20at%20the%20Warwick%20Hotel,%20NYC%20March%2017,%201956.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Coke" src="http://theworldofphotographers.files.wordpress.com/2011/12/alfred-wertheimer-elvis-52.jpg?w=600" alt="" />
+        </li>
+        <li>
+        <img alt="Stare" src="http://theworldofphotographers.files.wordpress.com/2011/12/alfred-wertheimer-elvis-33.jpg?w=600" alt="" />
+        </li>
+      </ul>
+      <pre>
+        $(".elvis").vernisage();
+      </pre>
+    </div>
+
+    <div class="example">
+      <ul class="elvis-slow">
+        <li>
+        <img alt="Affair" src="http://www.photokunst.com/admin/images/large/l_AW014_1210009086.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Guitar" src="http://4.bp.blogspot.com/_31F7mncJA5E/TSeKKV-dg2I/AAAAAAAAALs/Q0r7e94AcmY/s1600/00763292-photo-elvis-presley.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Hair" src="http://www.elvisblog.net/Al%20Wertheimer/Elvis%20The%20Early%20Years/Elvis%20at%20the%20Warwick%20Hotel,%20NYC%20March%2017,%201956.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Coke" src="http://theworldofphotographers.files.wordpress.com/2011/12/alfred-wertheimer-elvis-52.jpg?w=600" alt="" />
+        </li>
+        <li>
+        <img alt="Stare" src="http://theworldofphotographers.files.wordpress.com/2011/12/alfred-wertheimer-elvis-33.jpg?w=600" alt="" />
+        </li>
+      </ul>
+      <pre>
+        $(".elvis-slow").vernisage({
+          speed: 2000
+        });
+      </pre>
+    </div>
+    <div class="example">
+      <ul class="elvis-no-opacity">
+        <li>
+        <img alt="Affair" src="http://www.photokunst.com/admin/images/large/l_AW014_1210009086.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Guitar" src="http://4.bp.blogspot.com/_31F7mncJA5E/TSeKKV-dg2I/AAAAAAAAALs/Q0r7e94AcmY/s1600/00763292-photo-elvis-presley.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Hair" src="http://www.elvisblog.net/Al%20Wertheimer/Elvis%20The%20Early%20Years/Elvis%20at%20the%20Warwick%20Hotel,%20NYC%20March%2017,%201956.jpg" alt="" />
+        </li>
+        <li>
+        <img alt="Coke" src="http://theworldofphotographers.files.wordpress.com/2011/12/alfred-wertheimer-elvis-52.jpg?w=600" alt="" />
+        </li>
+        <li>
+        <img alt="Stare" src="http://theworldofphotographers.files.wordpress.com/2011/12/alfred-wertheimer-elvis-33.jpg?w=600" alt="" />
+        </li>
+      </ul>
+      <pre>
+        $(".elvis-no-opacity").vernisage({
+          opacity: 0
+        });
+      </pre>
+    </div>
+  </body>
+</html>
