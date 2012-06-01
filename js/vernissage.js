@@ -1,6 +1,6 @@
 (function($) {
-  $.fn.vernisage = function(options) {
-    var opts = $.extend({}, $.fn.vernisage.defaults, options);
+  $.fn.vernissage = function(options) {
+    var opts = $.extend({}, $.fn.vernissage.defaults, options);
     this.each(function() {
       var self = this;
 
@@ -11,7 +11,7 @@
 
         var classes = $(self).attr("class");
         $(self).attr("class", '');
-        $(self).wrap("<div class='vernisage'>");
+        $(self).wrap("<div class='vernissage'>");
         $(self).parent("div").css({height: imageHeight + "px", position: 'relative', width: imageWidth + 'px', overflow: 'hidden'});
         $(self).css({cursor: 'pointer', padding: '0px', margin: '0px', width: (imageWidth * imageCount)  + "px", position: 'absolute'});
         var dup = $(self).clone();
@@ -56,7 +56,7 @@
     });
   };
 
-  $.fn.vernisage.defaults = {
+  $.fn.vernissage.defaults = {
     dir: 'left',
     speed: 1000,
     opacity: 0.2
